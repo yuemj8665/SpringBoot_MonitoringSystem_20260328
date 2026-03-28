@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s # 메트릭을 몇초마다 설정 할 것인가?
+
+scrape_configs:
+  - job_name: 'springboot' # 작업 이름
+    metrics_path: '/actuator/prometheus' # spring actuator의 주소
+    static_configs:
+      - targets: ['springboot:8080']
