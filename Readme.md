@@ -149,4 +149,4 @@ docker-compose up --build
 
 | 날짜 | 에러 | 원인 | 해결 방법 |
 |------|------|------|-----------|
-| - | - | - | - |
+| 2026-03-28 | `Datasource ${DS_PROMETHEUS} was not found` | 대시보드 변수 미정의 또는 타입 불일치 | Dashboard settings → Variables → `DS_PROMETHEUS` 변수를 **Datasource** 타입으로 생성, Instance type: Prometheus 지정 |
